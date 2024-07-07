@@ -27,7 +27,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "$(PRODUCT_NAME) erlauben auf die Kamera zuzugreifen, um ISBN-Codes zu scannen."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
